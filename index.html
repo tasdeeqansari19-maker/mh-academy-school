@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.H Academy Public School</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background: #001f3f;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+    background-size: cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+}
+
+.footer {
+    background: #001f3f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>M.H Academy Public School</h1>
+<p>Quality Education for Bright Future</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#admission">Admission</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<h2>Welcome to M.H Academy Public School</h2>
+<p>Best School for Your Child</p>
+</div>
+
+<div id="about" class="section">
+<h2>About Us</h2>
+<p>We focus on quality education, discipline, and overall student development.</p>
+</div>
+
+<div id="gallery" class="section gallery">
+<h2>Gallery</h2>
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+<img src="https://images.unsplash.com/photo-1584697964154-9f1f1f8f1a47">
+<img src="https://images.unsplash.com/photo-1601582589907-f92af5ed9db8">
+</div>
+
+<div id="admission" class="section">
+<h2>Admission Form</h2>
+
+<form onsubmit="submitForm(event)">
+<input type="text" placeholder="Student Name" required><br>
+<input type="text" placeholder="Class" required><br>
+<input type="text" placeholder="Parent Phone" required><br>
+<textarea placeholder="Address"></textarea><br>
+<button type="submit">Submit</button>
+</form>
+
+<p id="msg"></p>
+
+</div>
+
+<div id="contact" class="section">
+<h2>Contact Us</h2>
+<p>Phone: 7536045119</p>
+<p>Email: mhacademy@gmail.com</p>
+</div>
+
+<div class="footer">
+<p>© 2026 M.H Academy Public School</p>
+</div>
+
+<a class="whatsapp" href="https://wa.me/7536045119" target="_blank">💬</a>
+
+<script>
+function submitForm(e){
+    e.preventDefault();
+    document.getElementById("msg").innerText = "Form submitted successfully!";
+}
+</script>
+
+</body>
+</html>
